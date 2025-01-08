@@ -66,28 +66,47 @@ const imagesTwo = [
 ];
 
 function Transition() {
-    const settings = {
+
+    //slider
+    const settingsOne = {
         infinite: true,
-        speed: 1000,
+        speed: 1500,
         slidesToShow: 6,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 300,
         dots: false,
         arrows: false,
-        cssEase: 'ease-out',
+        cssEase: 'ease-in-out',
         swipeToSlide: true,
+        rtl: true,
     };
 
+    const settingsTwo = {
+        infinite: true,
+        speed: 1500,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 300,
+        dots: false,
+        arrows: false,
+        cssEase: 'ease-in-out',
+        swipeToSlide: true,
+        rtl: false,
+    };
+    
     return(
       <div className="container">
          <div className = "slider">
-            <Slider {...settings}>
+            <Slider {...settingsOne}>
                 {imagesOne.map((item) => (
                     <div className="cards">
                         <div className="card" style={{
                             width: '100px',
-                            margin: '10px',
+                            marginTop: '10px',
+                            marginLeft: '20px',
+                            marginRight: '20px',
                             display: 'flex',
                             flexDirection: 'column',
                             textAlign: 'center',
@@ -108,7 +127,7 @@ function Transition() {
             </Slider>
         </div>
         <div className = "slider">
-            <Slider {...settings}>
+            <Slider {...settingsTwo}>
                     {imagesTwo.map((item) => (
                         <div className="cards">
                             <div className="card" style={{
@@ -135,7 +154,6 @@ function Transition() {
         </div>
         <div className="arrows">
             <img className="arrowOne" src="./down.png"></img>
-            <img className="arrowTwo" src="./down.png"></img>
         </div>
       </div>
     );

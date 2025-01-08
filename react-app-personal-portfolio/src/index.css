@@ -234,7 +234,7 @@ ul li {
 
 .arrowOne {
   position: absolute;
-  bottom: 10px;
+  bottom: 0vh;
   z-index: 2;
   width: 100px;
   height: 75px;
@@ -257,7 +257,7 @@ ul li {
   margin-top: 30vh;
 }
 
-@media only screen and (max-height: 560px) {
+@media only screen and (max-height: 595px) {
   header {
     display: none;
   }
@@ -275,10 +275,16 @@ ul li {
   }
   .errorMsg {
     display: block;
+  }
+  .slider {
+    display: none;
+  }
+  .arrows {
+    display: none;
   }
 }
 
-@media only screen and (max-width: 910px) and (max-height: 642px) {
+@media only screen and (max-width: 910px) and (max-height: 725px) {
   header {
     display: none;
   }
@@ -294,8 +300,13 @@ ul li {
     background-color: rgb(124, 67, 67);
     display: block;
   }
-
   .errorMsg {
     display: block;
+  }
+  .slider {
+    display: none;
+  }
+  .arrows {
+    display: none;
   }
 }
