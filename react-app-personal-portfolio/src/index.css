@@ -236,14 +236,33 @@ ul li {
   position: absolute;
   bottom: 0vh;
   z-index: 2;
-  width: 100px;
-  height: 75px;
+  width: 70px;
+  height: 50px;
+  animation: bobbing 2s infinite ease-in-out;
 }
 
 .arrowTwo {
-  width: 100px;
-  height: 75px;
+  position: absolute;
+  bottom: 1vh;
+  z-index: 2;
+  width: 70px;
+  height: 50px;
+  
 }
+
+@keyframes bobbing {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
 
 /* size error */
 
@@ -257,7 +276,7 @@ ul li {
   margin-top: 30vh;
 }
 
-@media only screen and (max-height: 595px) {
+@media only screen and (max-height: 850px) {
   header {
     display: none;
   }
@@ -267,10 +286,11 @@ ul li {
   .popUp {
     position: absolute;
     text-align: center;
+    font-family:'Times New Roman', Times, serif;
     color: white;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(124, 67, 67);
+    background-color: rgb(71, 39, 82);
     display: block;
   }
   .errorMsg {
@@ -284,7 +304,7 @@ ul li {
   }
 }
 
-@media only screen and (max-width: 910px) and (max-height: 725px) {
+@media only screen and (max-width: 910px) and (max-height: 800px) {
   header {
     display: none;
   }
@@ -293,11 +313,12 @@ ul li {
   }
   .popUp {
     position: absolute;
+    font-family:'Times New Roman', Times, serif;
     text-align: center;
     color: white;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(124, 67, 67);
+    background-color: rgb(71, 39, 82);
     display: block;
   }
   .errorMsg {

@@ -1,6 +1,8 @@
 function Projects() {
     return(
-        <p>Hello</p>
+       <div className="projectsContainer">
+            <p>Dulce is wifey</p>
+       </div>
     );
 }
 

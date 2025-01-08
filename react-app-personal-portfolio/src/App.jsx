@@ -10,7 +10,7 @@ function App() {
       <div className="popUp">
         <h1 className="errorMsg">Screen size is too small! 
           <br></br>
-          Enlarge the screen to see the content 😊</h1>
+          Enlarge the screen to see the content :&#41;&#41;</h1>
       </div>
       <Header/>
       <Home/>

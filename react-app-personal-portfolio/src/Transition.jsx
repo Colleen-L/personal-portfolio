@@ -95,7 +95,7 @@ function Transition() {
         swipeToSlide: true,
         rtl: false,
     };
-    
+
     return(
       <div className="container">
          <div className = "slider">
@@ -153,7 +153,8 @@ function Transition() {
                 </Slider>
         </div>
         <div className="arrows">
-            <img className="arrowOne" src="./down.png"></img>
+            <img className="arrowOne" src="./down2.png"></img>
+            <img className="arrowTwo" src="./down2.png"></img>
         </div>
       </div>
     );
