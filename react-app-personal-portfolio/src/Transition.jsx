@@ -152,10 +152,12 @@ function Transition() {
                     ))}
                 </Slider>
         </div>
-        <div className="arrows">
+
+        {/* <div className="arrows">
             <img className="arrowOne" src="./down2.png"></img>
             <img className="arrowTwo" src="./down2.png"></img>
-        </div>
+        </div> */}
+
       </div>
     );
 

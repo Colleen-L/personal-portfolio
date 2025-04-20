@@ -14,6 +14,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 999;
   right: 20px;
   margin-left: 10px;
   margin-top: 10px;
@@ -262,115 +263,6 @@ ul li {
   }
 }
 
-/* projects */
-
-.projectsContainer {
-  margin-top: 100px;
-  display: flex;
-}
-
-.projectsHeader {
-  color: #A393BF;
-  text-transform: uppercase;
-  font-size: 24px;
-  letter-spacing: 3px;
-  margin: 25px;
-  margin-left: 50px;
-}
-
-.projects {
-  margin-top: 10px;
-  margin-left: 50px;
-  width: 75%;
-}
-
-/* project */
-
-.projectTitle {
-  font-size: 18px;
-  color: #B3B3B3;
-}
-
-.projectPanel {
-  display: flex;
-  justify-content: space-between;
-  height: 100%;
-  align-items: center;
-}
-
-.projectSlider {
-  display: flex;
-  overflow: hidden;
-  width: 100%;
-}
-
-.sliderImages {
-  background-color: black;
-  width: 100%;
-  height: auto;
-  position: relative;
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.projectImages {
-  padding: 5px;
-  width: 200px;
-  transition: opacity 0.5s ease-in-out;
-  opacity: 0;
-}
-
-.projectImages.active {
-  opacity: 1;
-}
-
-button {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  font-size: 20px;
-  z-index: 10;
-}
-
-button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.previousButton {
-  left: 0;
-}
-
-.nextButton {
-  right: 0;
-}
-
-.projectDescription {
-  padding: 5px;
-  padding-left: 45px;
-  margin: 10px;
-  color: #B3B3B3;
-}
-
-.projectLanguages {
-  padding: 5px;
-  margin: 10px;
-  color: #B3B3B3;
-}
-
-/* size error */
-
-.popUp {
-  display: none;
-}
-
-.errorMsg {
-  display: none;
-  padding: 50px;
-  margin-top: 30vh;
-}
-
 @media only screen and (max-height: 850px) {
   header {
     display: none;
@@ -378,21 +270,9 @@ button:hover {
   .homeSplit {
     display: none;
   }
-  .popUp {
-    position: absolute;
-    text-align: center;
-    font-family:'Times New Roman', Times, serif;
-    color: white;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(71, 39, 82);
-    display: block;
-  }
-  .errorMsg {
-    display: block;
-  }
   .slider {
     display: none;
+    width: 1px;
   }
   .arrows {
     display: none;
@@ -405,19 +285,6 @@ button:hover {
   }
   .homeSplit {
     display: none;
-  }
-  .popUp {
-    position: absolute;
-    font-family:'Times New Roman', Times, serif;
-    text-align: center;
-    color: white;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(71, 39, 82);
-    display: block;
-  }
-  .errorMsg {
-    display: block;
   }
   .slider {
     display: none;
